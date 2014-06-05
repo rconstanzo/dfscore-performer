@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 126.0, 1499.0, 852.0 ],
+		"rect" : [ 103.0, 92.0, 1499.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,32 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "" ],
+					"patching_rect" : [ 1458.25, 301.5, 32.5, 20.0 ],
+					"text" : "t 3 l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "bpatcher",
+					"name" : "lcds.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 2280.0, 1280.0, 760.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -216,11 +242,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 553.0, 395.0, 1129.0, 466.0 ],
+						"rect" : [ 553.0, 395.0, 1325.0, 458.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -243,6 +269,76 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-128",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1095.0, 302.0, 198.0, 18.0 ],
+									"text" : "frameoval 180 20 40 80 255 0 255"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-129",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1095.0, 215.125, 139.0, 18.0 ],
+									"text" : "framerect 40 80 80 120"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-130",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1095.0, 245.75, 185.0, 18.0 ],
+									"text" : "paintrect 60 60 90 90 204 0 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-132",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1095.0, 276.375, 139.0, 18.0 ],
+									"text" : "linesegment 5 5 150 50"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1095.0, 366.0, 73.0, 20.0 ],
+									"text" : "prepend lcd"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -253,7 +349,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -395,7 +491,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -857,6 +953,52 @@
 									"destination" : [ "obj-33", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 1104.5, 392.0, 37.5, 392.0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-128", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-129", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-130", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-132", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
 									"midpoints" : [ 516.5, 392.0, 37.5, 392.0 ],
 									"source" : [ "obj-15", 0 ]
 								}
@@ -1221,7 +1363,6 @@
 					"name" : "notation.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -760.0 ],
 					"patching_rect" : [ 0.0, 760.0, 1280.0, 760.0 ]
 				}
 
@@ -1251,7 +1392,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 1421.5, 301.5, 32.5, 20.0 ],
+					"patching_rect" : [ 1420.5, 301.5, 32.5, 20.0 ],
 					"text" : "t 2 l"
 				}
 
@@ -1300,12 +1441,12 @@
 					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-18",
-					"linecount" : 17,
+					"linecount" : 21,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1301.0, 663.0, 150.0, 234.0 ],
-					"text" : "types of material\n\nTEXT\n-play/stop\n-complex instructions\n-interaction\n\nNOTATION\n-roll for most\n-beams for specifics\n(multislider display?)\n\nGRAPHIC\n-images\n-graphic scores\n-video\n-player/position map"
+					"patching_rect" : [ 1301.0, 663.0, 150.0, 288.0 ],
+					"text" : "types of material\n\nTEXT\n-play/stop\n-complex instructions\n-interaction\n\nNOTATION\n-roll for most\n-beams for specifics\n(multislider display?)\n\nGRAPHIC\n-images\n-graphic scores\n-video\n-player/position map\n\nLCD\n-image drawing\n-moving graphics"
 				}
 
 			}
@@ -1326,16 +1467,17 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"hidden" : 1,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1345.0, 270.0, 172.0, 20.0 ],
-					"text" : "route text notation graphic aux"
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 1345.0, 270.0, 207.75, 20.0 ],
+					"text" : "route text notation graphic lcd aux"
 				}
 
 			}
@@ -1657,6 +1799,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"midpoints" : [ 1467.75, 328.75, 1354.5, 328.75 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.501961, 1.0, 0.0, 1.0 ],
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-28", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -1768,7 +1931,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"source" : [ "obj-5", 3 ]
+					"source" : [ "obj-5", 4 ]
 				}
 
 			}
@@ -1779,6 +1942,16 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-5", 3 ]
 				}
 
 			}
@@ -1817,7 +1990,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 1431.0, 328.75, 1354.5, 328.75 ],
+					"midpoints" : [ 1430.0, 328.75, 1354.5, 328.75 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1879,21 +2052,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "texts.maxpat",
-				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/Dynamic Score/dfscore",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "graphic.maxpat",
-				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/Dynamic Score/dfscore",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "1.jpg",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
+				"patcherrelativepath" : ".",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "notation.maxpat",
-				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/Dynamic Score/dfscore",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1901,20 +2081,27 @@
 , 			{
 				"name" : "bach.score2roll.maxpat",
 				"bootpath" : "/Applications/Max 6.1/packages/bach/patchers",
-				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/packages/bach/patchers",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bach.+.maxpat",
 				"bootpath" : "/Applications/Max 6.1/packages/bach/patchers",
-				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/packages/bach/patchers",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aux.maxpat",
-				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/Dynamic Score/dfscore",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lcds.maxpat",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

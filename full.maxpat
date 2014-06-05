@@ -2988,8 +2988,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 773.0, 10.0, 430.0, 315.0 ],
-					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nPerformer level:\n/\n\nSending messages:\n/dfscore/score/performerXX/main/text/{message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /aux = message types\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers\n.../\n"
+					"patching_rect" : [ 773.0, 10.0, 430.0, 328.0 ],
+					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nPerformer level:\n/\n\nSending messages:\n/dfscore/score/performerXX/main/text/{message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /lcd, /aux = message types\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers\n.../\n"
 				}
 
 			}
@@ -5844,7 +5844,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 57.0, 303.426422, 139.0, 34.0 ],
 									"tabmode" : 0,
-									"text" : "192.168.0.6"
+									"text" : "192.168.0.5"
 								}
 
 							}
@@ -7292,12 +7292,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-20",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 261.944946, 525.020752, 119.0, 114.0 ],
-					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\ndots ( ( score ) )\ngraphic picture.jpg\naux this is text\nhide\nunhide"
+					"patching_rect" : [ 261.944946, 525.020752, 119.0, 127.0 ],
+					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\ndots ( ( score ) )\ngraphic picture.jpg\nlcd anything\naux this is text\nhide\nunhide"
 				}
 
 			}
@@ -7307,12 +7307,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-9",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.944946, 500.020752, 119.0, 114.0 ],
-					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\ndots ( ( score ) )\ngraphic picture.jpg\naux this is text\nhide\nunhide"
+					"patching_rect" : [ 7.944946, 500.020752, 119.0, 127.0 ],
+					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\ndots ( ( score ) )\ngraphic picture.jpg\nlcd anything\naux this is text\nhide\nunhide"
 				}
 
 			}
@@ -7758,6 +7758,13 @@
 			}
 , 			{
 				"name" : "aux.maxpat",
+				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lcds.maxpat",
 				"bootpath" : "/Users/Rodrigo/Dropbox/School/Hudds/dfscore System/dfscore/dfs Performer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
