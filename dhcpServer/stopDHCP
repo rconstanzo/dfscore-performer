@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist # stop dhcp, if running
+sudo ifconfig en1 delete 10.0.0.1																																								# delete static IP and act as dhcp client
+

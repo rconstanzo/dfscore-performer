@@ -1,0 +1,7 @@
+#!/bin/bash
+curDir=`pwd` 		  					                        																											# get current directory
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist # stop dhcp, if running
+sudo cp $pwd/bootpd.plist /etc/bootpd.plist																														# copy local dhcp config to /etc
+sudo ifconfig en1 10.0.0.1			              																											   # set ethernet to static IP
+sudo /bin/launchctl load -w /System/Library/LaunchDaemons/bootps.plist   # launch the dhcp server
+
