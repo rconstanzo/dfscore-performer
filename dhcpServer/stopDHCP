@@ -1,4 +1,6 @@
 #!/bin/bash
 sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist # stop dhcp, if running
-sudo ifconfig en1 delete 10.0.0.1																																								# delete static IP and act as dhcp client
-
+sudo networksetup -setv6automatic "Thunderbolt Ethernet"
+sudo networksetup -setdhcp "Thunderbolt Ethernet"
+#sudo ifconfig en5 delete 10.0.0.1																																								# delete static IP and act as dhcp client
+#sudo ipconfig set en5 DHCP

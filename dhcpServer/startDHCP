@@ -1,7 +1,10 @@
 #!/bin/bash
-curDir=`pwd` 		  					                        																											# get current directory
-sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist # stop dhcp, if running
-sudo cp $pwd/bootpd.plist /etc/bootpd.plist																														# copy local dhcp config to /etc
-sudo ifconfig en1 10.0.0.1			              																											   # set ethernet to static IP
-sudo /bin/launchctl load -w /System/Library/LaunchDaemons/bootps.plist   # launch the dhcp server
+curDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) 		 
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist 
+sudo cp "$curDir/bootpd.plist" /etc/bootpd.plist			 
+sudo networksetup -setv6off "Thunderbolt Ethernet"
+sudo networksetup -setmanual "Thunderbolt Ethernet" 10.0.0.1 255.255.255.0 10.0.0.1
+#sudo ipconfig set en5 MANUAL 10.0.0.1 255.255.255.0
+#sudo ifconfig en5 10.0.0.1
+sudo /bin/launchctl load -w /System/Library/LaunchDaemons/bootps.plist 
 
