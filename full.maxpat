@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 426.0, 57.0, 1296.0, 878.0 ],
+		"rect" : [ 462.0, 128.0, 1296.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ -19.0, 438.0, 1087.0, 523.0 ],
+						"rect" : [ 0.0, 438.0, 1087.0, 523.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2804,8 +2804,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 773.0, 10.0, 430.0, 315.0 ],
-					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nPerformer level:\n/\n\nSending messages:\n/dfscore/score/performerXX/main/text/{message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /lcd, /aux = message types\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers\n.../\n"
+					"patching_rect" : [ 773.0, 10.0, 495.0, 315.0 ],
+					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nPerformer level:\n/\n\nSending messages:\n/dfscore/score/performerXX/main/text {message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /lcd, /aux = message types\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers\n.../"
 				}
 
 			}
@@ -2826,7 +2826,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 329.0, 207.0, 469.0, 643.0 ],
+						"rect" : [ 286.0, 198.0, 469.0, 643.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -2879,7 +2879,7 @@
 											"architecture" : "x86"
 										}
 ,
-										"rect" : [ 25.0, 69.0, 685.0, 335.0 ],
+										"rect" : [ 940.0, 134.0, 685.0, 335.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2922,7 +2922,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 20.0, 209.0, 200.0, 18.0 ],
-													"text" : "/dfscore/score/info/dfs_version/0.98"
+													"text" : "/dfscore/score/info/dfs_version 0.98"
 												}
 
 											}
@@ -2936,7 +2936,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 20.0, 181.0, 211.0, 18.0 ],
-													"text" : "/dfscore/score/info/duration/5 minutes"
+													"text" : "/dfscore/score/info/duration 6 minutes"
 												}
 
 											}
@@ -2949,8 +2949,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 20.0, 151.0, 169.0, 18.0 ],
-													"text" : "/dfscore/score/info/tempo/120"
+													"patching_rect" : [ 20.0, 151.0, 165.0, 18.0 ],
+													"text" : "/dfscore/score/info/tempo120"
 												}
 
 											}
@@ -2963,8 +2963,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 20.0, 123.0, 183.0, 18.0 ],
-													"text" : "/dfscore/score/info/performers/ 6"
+													"patching_rect" : [ 20.0, 123.0, 180.0, 18.0 ],
+													"text" : "/dfscore/score/info/performers 6"
 												}
 
 											}
@@ -2978,7 +2978,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 20.0, 91.0, 649.0, 18.0 ],
-													"text" : "/dfscore/score/info/instrumentation/guitar x 2\\, drums\\, keys\\, drums tetete ete guitar x 2\\, drums\\, keys\\, drums tetete ete"
+													"text" : "/dfscore/score/info/instrumentation guitar x 2\\, drums\\, keys\\, drums tetete ete guitar x 2\\, drums\\, keys\\, drums tetete ete"
 												}
 
 											}
@@ -3448,7 +3448,7 @@
 									"patching_rect" : [ 1054.142822, 267.0, 165.0, 36.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 24.0, 580.0, 160.0, 36.0 ],
-									"text" : "5 minutes"
+									"text" : "6 minutes"
 								}
 
 							}
@@ -3547,9 +3547,9 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 432.857147, 267.0, 207.0, 216.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 24.0, 326.0, 420.0, 126.0 ],
-									"text" : "guitar x 2 , drums , keys , drums tetete ete guitar x 2 , drums , keys , drums tetete ete"
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 24.0, 326.0, 420.0, 96.0 ],
+									"text" : "guitar x 2, drums, keys, drums tetete ete guitar x 2, drums, keys, drums tetete ete"
 								}
 
 							}
@@ -4041,7 +4041,7 @@
 			}
 , 			{
 				"box" : 				{
-					"alpha" : 0.0,
+					"alpha" : 0.6,
 					"autofit" : 1,
 					"id" : "obj-33",
 					"maxclass" : "fpic",
@@ -4392,7 +4392,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 378.0, 84.0, 365.0, 365.0 ],
+						"rect" : [ 426.0, 107.0, 365.0, 365.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -4940,7 +4940,7 @@
 											"architecture" : "x86"
 										}
 ,
-										"rect" : [ 143.0, 74.0, 250.0, 424.0 ],
+										"rect" : [ 1326.0, 222.0, 226.0, 437.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4960,6 +4960,17 @@
 										"digest" : "",
 										"tags" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-13",
+													"maxclass" : "button",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 84.0, 39.0, 20.0, 20.0 ]
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -5080,9 +5091,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "bang", "en1" ],
+													"outlettype" : [ "bang", "en5" ],
 													"patching_rect" : [ 35.0, 78.0, 47.0, 20.0 ],
-													"text" : "t b en1"
+													"text" : "t b en5"
 												}
 
 											}
@@ -5139,6 +5150,15 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-10", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-13", 0 ]
 												}
 
 											}
@@ -5650,6 +5670,7 @@
 									"id" : "obj-26",
 									"ignoreclick" : 1,
 									"keymode" : 1,
+									"linecount" : 2,
 									"lines" : 1,
 									"maxclass" : "textedit",
 									"numinlets" : 1,
@@ -5658,9 +5679,10 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 191.0, 200.431122, 135.0, 30.0 ],
 									"presentation" : 1,
+									"presentation_linecount" : 2,
 									"presentation_rect" : [ 57.0, 303.426422, 139.0, 34.0 ],
 									"tabmode" : 0,
-									"text" : "192.168.0.5"
+									"text" : "169.254.136.138"
 								}
 
 							}
