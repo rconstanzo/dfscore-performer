@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 230.0, 44.0, 1500.0, 885.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,22 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 216.5, 88.5, 204.0, 51.0 ],
+					"text" : "Presentation Rectangle :\nFull screen : 0. 0. 1280. 800.\nMini display : 922. 574. 335. 186."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -58,7 +74,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -390,7 +406,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -713,7 +729,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -750,7 +766,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 2,
+															"revision" : 7,
 															"architecture" : "x86"
 														}
 ,
@@ -980,7 +996,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 2,
+															"revision" : 7,
 															"architecture" : "x86"
 														}
 ,
@@ -1061,7 +1077,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 2,
+																			"revision" : 7,
 																			"architecture" : "x86"
 																		}
 ,
@@ -1490,7 +1506,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -2246,7 +2262,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 7,
 											"architecture" : "x86"
 										}
 ,
@@ -3044,7 +3060,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 410.0, 184.0, 69.0, 20.0 ],
+					"patching_rect" : [ 492.0, 165.0, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -3073,7 +3089,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 128.5, 93.5, 81.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1280.0, 800.0 ],
+					"presentation_rect" : [ 922.0, 574.0, 335.0, 186.0 ],
 					"rounded" : 0
 				}
 
@@ -3107,7 +3123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 410.0, 118.925659, 20.0, 20.0 ]
+					"patching_rect" : [ 492.0, 99.925659, 20.0, 20.0 ]
 				}
 
 			}
@@ -3120,7 +3136,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 410.0, 87.96283, 43.0, 20.0 ],
+					"patching_rect" : [ 492.0, 68.96283, 43.0, 20.0 ],
 					"text" : "sel 27"
 				}
 
@@ -3134,7 +3150,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 410.0, 57.0, 59.5, 20.0 ],
+					"patching_rect" : [ 492.0, 38.0, 59.5, 20.0 ],
 					"text" : "key"
 				}
 
@@ -3148,7 +3164,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 149.88855, 79.0, 18.0 ],
+					"patching_rect" : [ 492.0, 130.88855, 79.0, 18.0 ],
 					"text" : "fullscreen $1"
 				}
 
