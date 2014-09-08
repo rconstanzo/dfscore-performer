@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -28,6 +28,38 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"hidden" : 1,
+					"id" : "obj-4",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1487.0, 118.0, 150.0, 60.0 ],
+					"text" : "allow scripting messages to thispatcher to allow the creation of fixed panel/display features"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1393.0, 118.0, 69.0, 20.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgtransparent" : 1,
 					"border" : 0,
@@ -78,11 +110,11 @@
 					"hidden" : 1,
 					"id" : "obj-19",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1316.0, 70.0, 111.0, 20.0 ],
-					"text" : "route transparency"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1316.0, 70.0, 173.0, 20.0 ],
+					"text" : "route transparency thispatcher"
 				}
 
 			}
@@ -102,6 +134,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-19", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -115,8 +156,8 @@
 					"destination" : [ "obj-98", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 1417.5, 162.0, 1286.5, 162.0, 1286.5, -10.0, 9.5, -10.0 ],
-					"source" : [ "obj-19", 1 ]
+					"midpoints" : [ 1479.5, 162.0, 1286.5, 162.0, 1286.5, -10.0, 9.5, -10.0 ],
+					"source" : [ "obj-19", 2 ]
 				}
 
 			}

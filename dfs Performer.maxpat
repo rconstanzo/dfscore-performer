@@ -2924,7 +2924,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 178.444946, 209.576935, 72.0, 20.0 ],
-					"text" : "loadmess 1",
+					"text" : "loadmess 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -4796,8 +4796,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-7::obj-13::obj-76" : [ "number[1]", "number", 0 ],
-			"obj-11::obj-37::obj-13::obj-76" : [ "number", "number", 0 ]
+			"obj-11::obj-37::obj-13::obj-76" : [ "number", "number", 0 ],
+			"obj-11::obj-7::obj-13::obj-76" : [ "number[1]", "number", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
