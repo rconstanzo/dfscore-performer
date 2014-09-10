@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 391.0, 215.0, 1280.0, 716.0 ],
+		"rect" : [ 257.0, 135.0, 1280.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -27,7 +27,7 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"title" : "dfs Perfomer 0.1b",
+		"title" : "dfs Perfomer 0.1c",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -2834,7 +2834,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 851.944946, 663.0, 69.0, 20.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "close", "nozoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 391, 215, 1671, 931, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "close", "nozoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 257, 135, 1537, 851, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -5709,8 +5709,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-37::obj-13::obj-76" : [ "number", "number", 0 ],
-			"obj-11::obj-7::obj-13::obj-76" : [ "number[1]", "number", 0 ]
+			"obj-11::obj-7::obj-13::obj-76" : [ "number[1]", "number", 0 ],
+			"obj-11::obj-37::obj-13::obj-76" : [ "number", "number", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
