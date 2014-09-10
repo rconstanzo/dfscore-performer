@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -242,7 +242,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x86"
 						}
 ,
@@ -349,7 +349,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 8,
 											"architecture" : "x86"
 										}
 ,
@@ -491,7 +491,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 8,
 											"architecture" : "x86"
 										}
 ,
@@ -1278,7 +1278,7 @@
 					"name" : "aux.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 12.0, 720.0, 80.0 ],
+					"patching_rect" : [ 280.0, 12.0, 720.0, 100.0 ],
 					"varname" : "aux_text"
 				}
 
@@ -1293,7 +1293,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3405.0, 4134.0, 137.0, 60.0 ],
+					"patching_rect" : [ 3405.0, 4134.0, 139.0, 60.0 ],
 					"text" : "this is here to make zoomfactor not sanatize values when going to a very small display"
 				}
 
