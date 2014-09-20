@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 16.0, 60.0, 1175.0, 712.0 ],
+		"rect" : [ 591.0, 188.0, 1175.0, 712.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -396,7 +396,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1328.5, 48.0, 173.0, 20.0 ],
-					"text" : "route thispatcher transparency"
+					"text" : "route transparency thispatcher"
 				}
 
 			}
