@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 100.0, 58.0, 1296.0, 878.0 ],
+		"rect" : [ 298.0, 167.0, 1296.0, 878.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,7 +41,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -222,7 +222,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -364,7 +364,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1065,7 +1065,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1246,7 +1246,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -1388,7 +1388,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -2119,7 +2119,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2391,7 +2391,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2619,7 +2619,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -3085,7 +3085,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 773.0, 10.0, 495.0, 315.0 ],
-					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nPerformer level:\n/\n\nSending messages:\n/dfscore/score/performerXX/main/text {message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /lcd, /aux = message types\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers\n.../"
+					"text" : "Top level:\n/dfscore = top OSC namespace\n\nNext level:\n/dfscore/score = all messages dealing with notation (two way)\n/dfscore/setup = all messages dealing with tech/setup (two way)\n\nUtility level:\n/dfscore/score/info = general info about piece (composer, title, instrumentation, performers, tempo, duration, dfs version) (one way)\n\nSending messages:\n/dfscore/score/performerXX/main/text {message} = main message format\n.../performer0 = all performers, /performer1-xx = individual addresses\n.../main, /mini, /countdown, /section, /line, = display types\n.../text, /notation, /graphic, /lcd, /aux = message types\n\nUtility message types:\nhide and unhide sent to any display type will hide and unhide it\n() clears the contens of the main/mini display windows\n\nReceiving messages:\n/dfscore/score/feedback/performerXX = for musical feedback from performers"
 				}
 
 			}
@@ -3102,7 +3102,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -3155,7 +3155,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -3439,7 +3439,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -4374,7 +4374,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -4666,7 +4666,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -5018,7 +5018,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -5294,7 +5294,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -6252,7 +6252,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 57.0, 378.426422, 139.0, 34.0 ],
 									"tabmode" : 0,
-									"text" : "192.168.0.2"
+									"text" : "192.168.1.97"
 								}
 
 							}
@@ -7060,7 +7060,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -7478,7 +7478,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -7754,7 +7754,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.944946, 500.020752, 199.0, 127.0 ],
-					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\ndots ( ( score ) )\ngraphic picture.jpg\nlcd anything (including thispatcher)\naux this is text\nhide\nunhide"
+					"text" : "possible messages:\ntext This Is My Text\ntext () (hides)\nnotation ( ( score ) )\ngraphic picture.jpg\nlcd anything (including thispatcher)\naux this is text\nhide\nunhide"
 				}
 
 			}
